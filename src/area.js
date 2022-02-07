@@ -1,10 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getArea = void 0;
-// In area.js , create 4 functions getCircleArea , getRectangleArea , getTriangleArea , getArea ,
-//export only
-// getArea .
-const index_js_1 = require("./index.js");
+const types_js_1 = require("./types.js");
 function getCircleArea(shape) {
     return shape.radius * shape.radius * Math.PI;
 }
@@ -19,13 +16,13 @@ function getRectangleArea(shape) {
 function getArea(shape) {
     let area;
     switch (shape.type) {
-        case index_js_1.ShapeType.Circle:
+        case types_js_1.ShapeType.Circle:
             area = getCircleArea(shape);
             break;
-        case index_js_1.ShapeType.Rectangle:
+        case types_js_1.ShapeType.Rectangle:
             area = getRectangleArea(shape);
             break;
-        case index_js_1.ShapeType.Triangle:
+        case types_js_1.ShapeType.Triangle:
             area = getTriangleArea(shape);
             break;
     }

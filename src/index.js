@@ -1,27 +1,19 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ShapeType = void 0;
-// In index.js , have seperate interfaces for all the shapes.
-// Using getArea , print areas of different shapes.
 const area_1 = require("./area");
-var ShapeType;
-(function (ShapeType) {
-    ShapeType["Circle"] = "circle";
-    ShapeType["Rectangle"] = "rectangle";
-    ShapeType["Triangle"] = "triangle";
-})(ShapeType = exports.ShapeType || (exports.ShapeType = {}));
+const types_js_1 = require("./types.js");
 const circle = {
-    type: ShapeType.Circle,
+    type: types_js_1.ShapeType.Circle,
     radius: 5,
 };
 const triangle = {
-    type: ShapeType.Triangle,
+    type: types_js_1.ShapeType.Triangle,
     side1: 2,
     side2: 3,
     side3: 4,
 };
 const rectangle = {
-    type: ShapeType.Rectangle,
+    type: types_js_1.ShapeType.Rectangle,
     side1: 2,
     side2: 4,
 };

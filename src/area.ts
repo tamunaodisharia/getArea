@@ -1,4 +1,4 @@
-import { ShapeType, Circle, Rectangle, Triangle } from "./index.js";
+import { ShapeType, Circle, Rectangle, Triangle } from "./types.js";
 function getCircleArea(shape: Circle): number {
   return shape.radius * shape.radius * Math.PI;
 }
